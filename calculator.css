@@ -1,0 +1,30 @@
+
+      body{
+        background-color: black;
+        font-family: Arial;
+        font-weight: bold;
+      }
+
+      .calculator-button{
+        height: 60px;
+        width: 60px;
+        background-color: gray;
+        border: none;
+        border-radius: 90px;
+        padding: 25px;
+        font-weight: bold;
+        margin: 2px;
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .orange-button{
+        background-color: rgb(254, 160, 10);
+        color: white;
+      }
+
+      .display-text{
+        color: white;
+        font-size: 40px;
+      }
+    

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="calculator.css">
+      
+  </head>
+  <body>
+    <p>
+      Calculator
+    </p>
+    <p class="js-display-on-page display-text"></p>
+    <button class="calculator-button" onclick="calculation('1')"> 1</button>
+    <button class="calculator-button" onclick="calculation('2')"> 2</button>
+    <button class="calculator-button" onclick="calculation('3')"> 3</button>
+    <button class="calculator-button orange-button" onclick="calculation(' + ')"> +</button>
+    <p>
+    <button class="calculator-button" onclick="calculation('4')"> 4</button>
+    <button class="calculator-button" onclick="calculation('5')"> 5</button>
+    <button class="calculator-button" onclick="calculation('6')"> 6</button>
+    <button class="calculator-button orange-button" onclick="calculation(' - ')"> - </button>
+    <button class="calculator-button orange-button" onclick="calculation(' * ')"> *</button>
+  </p>
+  <button class="calculator-button" onclick="calculation('7')"> 7</button>
+  <button class="calculator-button" onclick="calculation('8')"> 8</button>
+  <button class="calculator-button" onclick="calculation('9')"> 9</button>
+  <button class="calculator-button orange-button" onclick="calculation(' / ')"> /</button>
+  <p>
+  <button class="calculator-button" onclick="calculation('0')">0</button>
+  <button class="calculator-button" onclick="calculation(' . ')"> .</button>
+  <button class="calculator-button orange-button" onclick="calculator = eval(calculator); updatecalculation();"> =</button>
+  <button class="calculator-button" onclick="calculator = ''; updatecalculation();">AC </button>
+</p>
+
+<script>
+  let calculator = '';
+  function calculation(value)
+  {
+   calculator += value; 
+   console.log(calculator);
+   updatecalculation();
+
+
+  }
+
+  function updatecalculation() {document.querySelector('.js-display-on-page').innerHTML = calculator;}
+
+
+</script>
+
+  </body>
+</html>
